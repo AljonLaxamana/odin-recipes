@@ -4,22 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin Project - Recipe</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>My Favorite Meals</h1>
-    <ul>
-      <li>
-        <a href="recipes/buttermilkFriedChicken.html"
-          >Buttermilk Fried Chicken</a
-        >
-      </li>
-      <li>
-        <a href="recipes/lemonPepperChickenDrummies.html"
-          >Lemon Pepper Chicken Drummies</a
-        >
-      </li>
-      <li><a href="recipes/cherryColaRibs.html">Cherry Coral Ribs</a></li>
-    </ul>
+    <h1 class="recipes-header">Hey Recipe!</h1>
+    <div class="recipes-container">
+      <div class="recipe-container">
+        <div class="recipe-image-container">
+          <a href="/recipes/pages/buttermilkFriedChicken.html"
+            ><img
+              src="/images/friedchicken.jpg"
+              width="400px"
+              alt="Buttermilk Fried Chicken"
+              class="recipe-image"
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <p class="recipe-title">Buttermilk Fried Chicken</p>
+      </div>
+
+      <div class="recipe-container">
+        <div class="recipe-image-container">
+          <a href="/recipes/pages/stickyGarlicPorkChops.html"
+            ><img
+              src="/images/porkchops.jpg"
+              width="400px"
+              alt="Sticky Garlic Pork Chops"
+              class="recipe-image"
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <p class="recipe-title">Sticky Garlic Pork Chops</p>
+      </div>
+
+      <div class="recipe-container">
+        <div class="recipe-image-container">
+          <a href="/recipes/pages/barbecueRIbs.html"
+            ><img
+              src="/images/ribs.jpg"
+              width="400px"
+              alt="Barbecue Ribs"
+              class="recipe-image"
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <p class="recipe-title">Barbecue Ribs</p>
+      </div>
+    </div>
   </body>
 </html>

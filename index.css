@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+:root {
+  --clr-primary: #4a4e69;
+  --clr-secondary: #d5bdaf;
+  --clr-accent: #f06d6d;
+  --clr-background: #f5ebe0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Handlee", cursive;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-color: var(--clr-background);
+}
+
+.recipes-container {
+  display: flex;
+  gap: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.recipes-header {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--clr-primary);
+  margin-top: -2rem;
+  background-color: var(--clr-secondary);
+  border-top: 5px solid var(--clr-accent);
+  border-left: 5px solid var(--clr-accent);
+  border-bottom: 5px solid var(--clr-primary);
+  border-right: 5px solid var(--clr-primary);
+  padding: 0.5rem 6rem;
+  box-shadow: 7px 7px 0px var(--clr-secondary);
+}
+
+.recipe-title {
+  margin-top: 1rem;
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary);
+  padding: 0.5rem;
+}
+
+.recipe-image-container {
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(0.5);
+  object-fit: cover;
+  transition: all ease-in-out 250ms;
+}
+
+.recipe-image-container:hover img {
+  transform: scale(1.1);
+  filter: grayscale(0);
+}
+
+.recipe-image-container:hover + .recipe-title {
+  color: var(--clr-accent);
+  font-weight: bolder;
+}
